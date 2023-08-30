@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+    <main>
+        <h1>Previsão do tempo</h1>
+        <form action="envio.php" method="post">
+            <input type="text" name="local" id="ilocal" placeholder="Digite o nome da cidade">
+            <button><span class="material-icons" id="search">search</span></button>
+        </form>
+        <div class="resp-conteudo">
+            <h2>Tempo em <span class="cidade">São Paulo</span></h2>
+            <p id="temperatura">22°C</p>
+            <p id="clima"><span class="material-icons" id="imagem-tempo">cloud</span>Nublado</p>
+            <p id="umidade">Umidade: 70%</p>
+        </div>
+    </main>
+</body>
